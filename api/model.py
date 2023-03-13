@@ -12,6 +12,7 @@ class ProductModel(BaseModel):
         schema_extra = {
             "example": {
                 "id": "00010203-0405-0607-0809-0a0b0c0d0e0f",
+                "description": "This is haiku product.",
                 "name": "Haiku",
                 "price": 500
             }
@@ -26,6 +27,7 @@ class UpdateProductModel(BaseModel):
         schema_extra = {
             "example": {
                 "name": "Haiku",
+                "description": "This is haiku product.",
                 "price": 500
             }
         }
