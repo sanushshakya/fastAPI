@@ -4,10 +4,10 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 
 #Model imports
-from api.model import ProductModel, UpdateProductModel
+from models.product_model import ProductModel, UpdateProductModel
 
 #Config import 
-from config import settings
+from api.config.config import settings
 
 #Defining our api routers
 def get_api_router(app):
